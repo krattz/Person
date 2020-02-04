@@ -20,7 +20,10 @@ public class Person {
             if(i==2){
                 topic += " and ";
             }
-        topic += interests[i] + ", ";
+            if(i==1){
+                topic += ", ";
+            }
+        topic += interests[i];
         }
         String msg = "Hello, my name is " + name +" and I am " + age + " years old."+ "\n" +
                 "My interests are ";
