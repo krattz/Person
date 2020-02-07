@@ -7,6 +7,5 @@ public class MainProgram {
         String greeting = person.hello();
         System.out.println(greeting);
 
-
     }
 }

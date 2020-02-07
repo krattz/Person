@@ -17,10 +17,10 @@ public class Person {
     {
         String topic = "";
         for (int i = 0; i<interests.length; i++){
-            if(i==2){
+            if(i==(interests.length -1)){
                 topic += " and ";
             }
-            if(i==1){
+            if(i> 0 && i <(interests.length -1)){
                 topic += ", ";
             }
         topic += interests[i];
@@ -30,4 +30,3 @@ public class Person {
         return msg+ topic;
     }
 }
-
